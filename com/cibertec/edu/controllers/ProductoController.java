@@ -83,6 +83,7 @@ public class ProductoController {
 		}
 	}
 
+	
 	private ResponseEntity<ByteArrayResource> getRecursoHtmlComoResponseEntity(String rutaHtml) throws IOException {
 		InputStream htmlStream;
 		try {

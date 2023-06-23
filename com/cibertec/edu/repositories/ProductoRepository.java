@@ -8,4 +8,5 @@ import com.cibertec.edu.models.Producto;
 @Repository
 public interface ProductoRepository extends CrudRepository<Producto, Long> {
 	
+	
 }
