@@ -20,9 +20,11 @@
             <textarea id="descripcion" name="descripcion" th:field="*{descripcion}" required></textarea>
         </div>
 
-        <div>
-            <button type="submit">Registrar Producto</button>
-        </div>
+	      <div>
+	        <button type="submit">Registrar Producto</button>
+	        
+	        <button type="submit" name="generarPdf" value="true">Generar Constancia</button>
+	    </div>
     </form>
 </body>
 </html>

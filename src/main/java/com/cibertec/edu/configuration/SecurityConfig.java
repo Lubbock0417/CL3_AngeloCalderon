@@ -20,6 +20,7 @@ public class SecurityConfig {
         http.authorizeRequests()
             .antMatchers("/resources/**").permitAll()
             .antMatchers("/producto/registrar").hasRole("ADMIN")
+            .antMatchers("/CrearConstancia").authenticated()
             .anyRequest().authenticated()
             .and()
             .formLogin()
