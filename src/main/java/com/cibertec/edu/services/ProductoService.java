@@ -9,9 +9,11 @@ import net.sf.jasperreports.engine.JRException;
 
 public interface ProductoService {
     
-    public void agregarProducto(Producto p);
-    
-    public byte[] generarConstanciaPdf(Producto producto) throws IOException, JRException;
-    
-    public Producto obtenerUltimoProductoPorUsuario(String username);
+    void agregarProducto(Producto p);
+
+	/*byte[] generarConstanciaPdf(Producto producto) throws IOException, JRException;
+	
+	public InputStream getProductoReporte(String nombre, String descripcion) throws Exception;*/
+
+	byte[] generarConstanciaPdf(String nombre, String descripcion) throws IOException, JRException;
 }

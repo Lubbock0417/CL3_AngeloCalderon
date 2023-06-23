@@ -22,9 +22,5 @@ public class ReporteProducto {
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
-	}
-		
+	}		
 }
-
-
-
