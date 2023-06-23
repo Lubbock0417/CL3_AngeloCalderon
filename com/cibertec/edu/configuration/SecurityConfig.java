@@ -40,6 +40,7 @@ public class SecurityConfig {
             .build();
         return new InMemoryUserDetailsManager(admin);
     }
+    
 
     @Bean
     public PasswordEncoder passwordEncoder() {
