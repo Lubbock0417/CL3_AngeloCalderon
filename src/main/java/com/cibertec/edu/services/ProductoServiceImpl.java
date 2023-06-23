@@ -42,5 +42,5 @@ public class ProductoServiceImpl implements ProductoService{
 			throw e;
 		}
 	}
-	
+
 }

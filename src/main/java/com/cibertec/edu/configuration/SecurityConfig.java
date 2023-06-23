@@ -31,7 +31,6 @@ public class SecurityConfig {
         return http.build();
     }
 
-    
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
         UserDetails admin = User.builder()
@@ -41,7 +40,6 @@ public class SecurityConfig {
             .build();
         return new InMemoryUserDetailsManager(admin);
     }
-    
 
     @Bean
     public PasswordEncoder passwordEncoder() {
